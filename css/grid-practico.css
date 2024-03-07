@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    /* border: 4px solid rgb(245, 7, 7); */
+    display: grid;
+    /* Unidades de medida fijas: px em rem */
+    /* Unidades elásticas : % vw auto */
+    /* grid-template-columns: 6em 10% 1fr 2fr; */
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr));
+    /* grid-auto-rows: 100px; */
+    /* //gap --> */
+    /* column-gap: 10px;
+    row-gap: 20px; */
+    gap: 15px;
+    /* padding: 10px; */
+
+    /* grid-template-rows: 50px 100px 150px 80px; */
+}
+
+.card {
+    border: 4px solid steelblue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+}
